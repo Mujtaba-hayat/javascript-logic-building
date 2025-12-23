@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Area of Triangle</title>
+
+	<script>
+		// method one:
+		// the formula use for area is (base*height)/2
+
+		/*var base = prompt('Enter base value of triangle:');
+		var height = prompt('Enter height value of triangle:');
+		var area = (base*height)/2;
+
+		console.log("base = "+base+" and "+"height = "+height);
+		console.log("The area of Triangle is = "+area);*/
+
+		//Method two:
+		// The formula is:  (a+b+c)/2 then underroot S*(S-a)*(S-b)*(S-c)
+
+		var a = 12;
+		var b = 10;
+		var c = 15;
+
+		var s = (a+b+c)/2;
+
+		var temp = s*(s-a)*(s-b)*(s-c);
+		var area = Math.sqrt(temp);
+		console.log("the area is: "+area) 
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
