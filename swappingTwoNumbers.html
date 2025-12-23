@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Swapping Two Numbers</title>
+
+	<script>
+	/*	// 1: using temporary variable 
+		var a = prompt('Enter First Number:');
+		var b = prompt('Enter Second Number:');
+		console.log("a is "+a+" b is "+b);
+		var temp;
+		temp = a;
+		a = b;
+		b = temp;
+
+		console.log("a is "+a+" b is "+b);
+		console.log(temp);*/
+
+		//2: Swapping without temporary variable
+		var a = Number(prompt('Enter First Number:'));	//we can also use parseInt()
+		var b = Number(prompt('Enter Second Number:'));
+		console.log("a is "+a+" b is "+b);
+
+		a = a+b;
+		a = a-b;
+		b = a-b;
+
+		// this is the easy and professional way two swap two number:
+		//[a,b]=[b,a];
+
+		console.log(`After the Swapping the a is ${a} and the b is ${b}`);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
