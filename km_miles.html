@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Km To Miles</title>
+	<script>
+		function convert(){
+			var km = document.getElementById('input').value;
+			const factor = 0.621371;
+			var res = factor * km;
+			document.getElementById('btn').innerText= `${res} Miles`;
+		}
+	</script>
+</head>
+<body>
+	<h1>
+		Convertion from Kilometer to Miles
+	</h1>
+	<input type="number" name="number" id="input">Kms
+	<button onclick="convert()">Convert</button>
+	<h2 id="btn"></h2>
+</body>
+</html>
